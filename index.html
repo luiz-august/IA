@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta name="google-adsense-account" content="ca-pub-6980843194281834">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>IA </title>
+</head>
+<body>
+  
+    <header class="menu">
+        <a href="https://www.instagram.com/lz_15_0_0/">
+        <div class="nomeDoSite"><h1>CMSP</h1></div></a>
+        <nav class="suporte" onclick="Abrir()"><h2>Suporte</h2></nav>
+    </header>
+
+    <main class="container">
+        <form id="form-pergunta-chat" class="form">
+            <label for="campo-pergunta" class="label">Digite sua pergunta:</label>
+            <input type="text" id="campo-pergunta" name="pergunta" class="input" required>
+            <input type="submit" id="btn-pergunta-chat" class="btn" value="Enviar">
+        </form>
+        <div id="pergunta" class="output"></div>
+        <div id="resposta" class="output"></div>
+    </main>
+
+    <div class="suporte-overlay" id="suporte-form" style="display: none;" >
+        <div id="fechar" onclick="fechar()"><h1>❌</h1></div>
+        <div class="suporte-container">
+            <h1>Suporte</h1>
+            <form action="https://api.sheetmonkey.io/form/t87yqrBoVUjwM9dUNzLZRv" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required="">
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required="">
+    
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+    
+    
+                <label for="tipo-suporte">Tipo de Suporte:</label>
+                <select id="tipo-suporte" name="tipo-suporte">
+                    <option value="tecnico">Técnico</option>
+                    <option value="administrativo">Bug</option>
+                    <option value="outro">Outro</option>
+                </select>
+    
+                <label for="descricao">Descrição do Problema:</label>
+                <textarea id="descricao" name="descricao" rows="4"></textarea>
+    
+                <label for="metodo-contato">Método Preferido de Contato:</label>
+                <select id="metodo-contato" name="metodo-contato">
+                    <option value="email">Email</option>
+                    <option value="telefone">Telefone</option>
+                    <option value="whatsapp">WhatsApp</option>
+                </select>
+    
+               
+                <button type="submit" class="suporte-btn">Enviar</button>
+            </form>
+        </div>
+    </div>
+   
+    <script type="module" src="node.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+     <script type="module" src="lock.js"></script>
+    <script src="suport.js"></script>
+</body>
+</html>
